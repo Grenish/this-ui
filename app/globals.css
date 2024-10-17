@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+@font-face {
+  font-family: "Coder";
+  src: url("./fonts/Coder-Regular.woff2") format("woff2"),
+    url("./fonts/Coder-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.code {
+  font-family: "Coder", monospace;
+}
+
+.br{
+  border-radius: 38% 62% 40% 60% / 25% 43% 57% 75% ;
+}
