@@ -7,14 +7,12 @@ import { useState } from "react";
 export default function AuthForm1() {
   const [seePassword, setSeePassword] = useState(false);
 
-  // Toggle password visibility
   const handleSeePassword = () => {
     setSeePassword(!seePassword);
   };
 
   return (
     <div className="flex flex-col md:flex-row h-screen bg-[#b1ac7034] w-full">
-      {/* Form Section */}
       <div className="w-full md:w-1/2 flex flex-col items-center justify-center p-4">
         <div className="flex flex-col w-full max-w-md p-2 mb-2 ">
           <Image
@@ -28,9 +26,7 @@ export default function AuthForm1() {
           <p className="text-sm text-center">Let's get you started</p>
         </div>
 
-        {/* Form */}
         <form action="" method="post" className="flex flex-col w-full max-w-md">
-          {/* Email Input */}
           <div className="border-2 border-gray-600 flex items-center justify-between p-2 rounded-xl">
             <input
               type="email"
@@ -50,7 +46,6 @@ export default function AuthForm1() {
             </svg>
           </div>
 
-          {/* Password Input */}
           <div className="border-2 border-gray-600 flex items-center justify-between p-2 rounded-xl mt-2">
             <input
               type={seePassword ? "text" : "password"}
@@ -78,7 +73,6 @@ export default function AuthForm1() {
             </button>
           </div>
 
-          {/* Submit Button */}
           <button
             type="submit"
             className="bg-[#ccd8e5] hover:bg-[#98a4c3] transition-colors mt-2 p-2 rounded-xl"
@@ -86,7 +80,6 @@ export default function AuthForm1() {
             Login
           </button>
 
-          {/* Forget Password and Signup */}
           <div className="flex flex-col md:flex-row items-center mt-2 gap-2">
             <button className="bg-[#9c9cbc] hover:bg-[#868eb1] transition-colors p-2 rounded-xl w-full">
               Forget Password
@@ -98,14 +91,12 @@ export default function AuthForm1() {
             </Link>
           </div>
 
-          {/* Divider */}
           <span className="flex items-center w-full p-2">
             <hr className="flex-grow border-gray-400" />
             <p className="mx-2">Or</p>
             <hr className="flex-grow border-gray-400" />
           </span>
 
-          {/* Login with Google */}
           <button className="bg-indigo-500 rounded-xl p-2 flex items-center justify-center gap-5 text-gray-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +124,6 @@ export default function AuthForm1() {
         </form>
       </div>
 
-      {/* Image Section */}
       <div className="hidden md:block md:w-1/2 p-2">
         <Image
           src="https://images.unsplash.com/photo-1525426846044-691f3a72e3b9?q=80&w=1536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
