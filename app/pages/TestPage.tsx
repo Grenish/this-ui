@@ -1,4 +1,6 @@
 import AuthForm1 from "../components/authForms/AuthForm1";
+import AuthForm2 from "../components/authForms/AuthForm2";
+import Cta1 from "../components/cta/Cta1";
 import Testimonials1 from "../components/testimonials/Testimonials1";
 
 export default function TestPage() {
@@ -16,16 +18,9 @@ export default function TestPage() {
 
   return (
     <div className="h-screen flex flex-col items-center justify-center">
-      {testimonials.map((testimonial, index) => (
-        <Testimonials1
-          key={index}
-          profileimg={testimonial.profileimg}
-          userName={testimonial.userName}
-          testimonial={testimonial.testimonial}
-          companyName={testimonial.companyName}
-          designation={testimonial.designation}
-        />
-      ))}
+      {/* <Testimonials1 {...testimonials[0]} /> */}
+      {/* <Cta1 /> */}
+      <AuthForm2 />
     </div>
   );
 }
